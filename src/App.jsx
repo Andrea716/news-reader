@@ -18,6 +18,7 @@ function App() {
         const response = await fetch(url);
         const data = await response.json();
         console.log('API Response:', data);
+        console.log('Fetching URL:', url); // Check that the URL is correct
 
         if (data.status === 'ok') {
           setArticles(data.articles);
