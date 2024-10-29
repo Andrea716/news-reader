@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/Searchbar';
 import NewsList from './components/NewsList';
 
 const API_KEY = 'c9e21bebfacf454eb28b98b89e864f97';
@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App container mx-auto p-4">
       <h1 className="text-center text-2xl font-bold mb-4">News Reader</h1>
-      <SearchBar setQuery={setQuery} />
+      <Searchbar setQuery={setQuery} />
       
       {error && <p className="text-red-500">{error}</p>}
       
